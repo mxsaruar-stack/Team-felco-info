@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#030303">
+<title>TEAM FELCO | Official Links</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100%}
+body{
+    min-height:100vh;
+    background:#030303;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+    overflow-x:hidden;
+}
+.bg{
+    position:fixed;inset:0;z-index:-2;overflow:hidden;
+    background:
+      radial-gradient(circle at 50% 10%,rgba(255,0,60,.16),transparent 34%),
+      radial-gradient(circle at 10% 90%,rgba(255,0,60,.06),transparent 30%),
+      #030303;
+}
+.glow{
+    position:absolute;width:280px;height:280px;border-radius:50%;
+    background:#ff003c;filter:blur(130px);opacity:.08;
+    animation:moveGlow 7s ease-in-out infinite alternate;
+}
+.glow.one{top:-110px;left:8%}
+.glow.two{right:-110px;bottom:8%;animation-delay:2s}
+@keyframes moveGlow{
+    from{transform:translate(0,0)}
+    to{transform:translate(50px,30px)}
+}
+.container{width:100%;max-width:520px;margin:auto;padding:42px 20px 55px}
+.profile{text-align:center;margin-bottom:32px}
+.profile-img{
+    width:128px;height:128px;object-fit:cover;border-radius:50%;
+    display:block;margin:0 auto 18px;
+    border:3px solid #ff003c;
+    box-shadow:0 0 10px #ff003c,0 0 30px rgba(255,0,60,.45);
+}
+h1{
+    font-size:29px;letter-spacing:3px;font-weight:800;color:#ff1748;
+    text-shadow:0 0 8px rgba(255,0,60,.8),0 0 25px rgba(255,0,60,.35);
+}
+.description{margin-top:9px;color:#8e8e8e;font-size:14px}
+.links{display:flex;flex-direction:column;gap:14px}
+.link{
+    --c:#ff003c;position:relative;display:flex;align-items:center;
+    width:100%;min-height:70px;padding:0 18px;text-decoration:none;color:#fff;
+    background:linear-gradient(145deg,rgba(30,30,34,.86),rgba(9,9,11,.94));
+    border:1px solid rgba(255,255,255,.055);border-radius:15px;
+    box-shadow:0 10px 28px rgba(0,0,0,.38);overflow:hidden;
+    transition:transform .22s,border-color .22s,box-shadow .22s;
+}
+.link::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+    background:var(--c);box-shadow:0 0 13px var(--c);
+}
+.link.active:hover{
+    transform:translateY(-3px);border-color:var(--c);
+    box-shadow:0 0 20px rgba(255,0,60,.12),0 12px 30px rgba(0,0,0,.45);
+}
+.icon{
+    flex:0 0 43px;width:43px;height:43px;border-radius:11px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:21px;font-weight:800;color:var(--c);
+    border:1px solid var(--c);
+}
+.link-name{flex:1;text-align:left;margin-left:17px;font-size:17px;font-weight:700}
+.arrow{color:#707070;font-size:27px;line-height:1}
+.link.disabled{opacity:.38;cursor:not-allowed}
+.footer{text-align:center;color:#4e4e4e;font-size:11px;margin-top:30px;letter-spacing:.5px}
+@media(max-width:380px){
+    .container{padding:30px 14px 45px}
+    .profile-img{width:112px;height:112px}
+    h1{font-size:25px}
+    .link{min-height:65px}
+}
+</style>
+</head>
+
+<body>
+<div class="bg"><div class="glow one"></div><div class="glow two"></div></div>
+
+<main class="container">
+<section class="profile">
+    <img class="profile-img"
+         src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%25' height='100%25' fill='%2309090d'/><circle cx='150' cy='150' r='142' fill='%23120a0d' stroke='%23ff003c' stroke-width='6'/><text x='150' y='165' text-anchor='middle' font-family='Arial' font-size='42' font-weight='bold' fill='%23ff1748'>TF</text></svg>"
+         alt="TEAM FELCO">
+    <h1>TEAM FELCO</h1>
+    <p class="description">Welcome to my official links</p>
+</section>
+
+<section class="links">
+
+<a class="link active" href="https://youtube.com/@teamfelco_78?si=VDsDZj1M9fs6IxZh" target="_blank" rel="noopener noreferrer" style="--c:#ff003c">
+    <div class="icon">▶</div><div class="link-name">YouTube</div><div class="arrow">›</div>
+</a>
+
+<a class="link active" href="https://t.me/Saruar_78" target="_blank" rel="noopener noreferrer" style="--c:#229ed9">
+    <div class="icon">✈</div><div class="link-name">Telegram</div><div class="arrow">›</div>
+</a>
+
+<a class="link active" href="https://t.me/+NRQwX88nKUQxYWY1" target="_blank" rel="noopener noreferrer" style="--c:#229ed9">
+    <div class="icon">✈</div><div class="link-name">Telegram Channel</div><div class="arrow">›</div>
+</a>
+
+<div class="link disabled" style="--c:#ff0050"><div class="icon">♪</div><div class="link-name">TikTok</div><div class="arrow">›</div></div>
+<div class="link disabled" style="--c:#1877f2"><div class="icon">f</div><div class="link-name">Facebook</div><div class="arrow">›</div></div>
+<div class="link disabled" style="--c:#e1306c"><div class="icon">◎</div><div class="link-name">Instagram</div><div class="arrow">›</div></div>
+<div class="link disabled" style="--c:#25d366"><div class="icon">◉</div><div class="link-name">WhatsApp</div><div class="arrow">›</div></div>
+<div class="link disabled" style="--c:#fff"><div class="icon">◈</div><div class="link-name">GitHub</div><div class="arrow">›</div></div>
+
+</section>
+
+<div class="footer">© 2026 TEAM FELCO • Official Links</div>
+</main>
+</body>
+</html>
